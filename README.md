@@ -1,4 +1,6 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# AI Generator for Kotlin Multiplatform Mobile Apps
+
+This is a Compose multiplatfrom application designed for showing a **list of products** and targeting Andoir, IOS
 
 * `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
   It contains several subfolders:
@@ -10,7 +12,41 @@ This is a Kotlin Multiplatform project targeting Android, iOS.
 * `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
   you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
 
+It provides a screen with 2 tabs, the first tab is the list of products from an API, and the second tab is the favourited products.
 
+**Technologies used** : Kotlin compose multiplatform, Ktor, ViewModel, MVI, Room, Koin, HTTP, Darwin, Coroutines, Flow, States management, Unidirectional data flow, and more
+
+## Prerequisites
+Use your preferred IDE to run the compose multi-platform project
+
+## Usage
+Once the application stars to run on your preferred device(Android-iOS), you can see a Screen contains 2 tabs.
+
+The first tab is for the product list, and the second tab is for the favourited by the user.
+
+## Structure
+The project is structured into several packages, In **ComposeApp** It has the following default structure for the following targeted source sets
+
+├── androidMain
+├── commonMain
+├── iosMain
+
+in the **commonMain/kotlin** package it has the following structure :
+├── app
+├── core
+├── di
+├── product 
+
+
+## Report
+Report for using AI is included in the `README.md` file
+
+## License
+This project is licensed under the MIT License.
+
+
+## Code
+[You can find the code as a zip file here](url)
 
 ## AI prompting
 I asked [Claude 3.7 Sonnet](claud.ai) to generate for me the bioleplate code for the DI Framework I'm using namely [Koin](https://insert-koin.io/) and to generate the network layer.
