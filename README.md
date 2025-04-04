@@ -14,7 +14,8 @@ This is a Compose multiplatfrom application designed for showing a **list of pro
 
 It provides a screen with 2 tabs, the first tab is the list of products from an API, and the second tab is the favourited products.
 
-**Technologies used** : Kotlin compose multiplatform, Ktor, ViewModel, MVI, Room, Koin, HTTP, Darwin, Coroutines, Flow, States management, Unidirectional data flow, and more
+## Technologies used 
+Kotlin compose multiplatform, Ktor, ViewModel, MVI, Room, Koin, HTTP, Darwin, Coroutines, Flow, States management, Unidirectional data flow, and more
 
 ## Prerequisites
 Use your preferred IDE to run the compose multi-platform project
@@ -27,26 +28,17 @@ The first tab is for the product list, and the second tab is for the favourited 
 ## Structure
 The project is structured into several packages, In **ComposeApp** It has the following default structure for the following targeted source sets
 
-├── androidMain
-├── commonMain
-├── iosMain
+androidMain
+commonMain
+iosMain
 
 in the **commonMain/kotlin** package it has the following structure :
-├── app
-├── core
-├── di
-├── product 
+app
+core
+di
+product 
 
 
-## Report
-Report for using AI is included in the `README.md` file
-
-## License
-This project is licensed under the MIT License.
-
-
-## Code
-[You can find the code as a zip file here](url)
 
 ## AI prompting
 I asked [Claude 3.7 Sonnet](claud.ai) to generate for me the bioleplate code for the DI Framework I'm using namely [Koin](https://insert-koin.io/) and to generate the network layer.
@@ -62,6 +54,11 @@ My approach I have implementd emphasize the following:
 1) Platform specific for every platform, HTTP for Android and Darwin for iOS,
 2) API Service implementation generated from Claude ai is poor in separation of concers as it handles the state management and netwrok request using shared flow, which can cause highly coupling .
 3) There is a proper mapping for the network responses to the domain objects using the extension functions.
+
+
+## License
+This project is licensed under the MIT License.
+
 
 
 Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
