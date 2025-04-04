@@ -1,0 +1,2 @@
+package de.david_riad.internship.compose_multiplatform_jetbrains.core.domain
+interface Error
